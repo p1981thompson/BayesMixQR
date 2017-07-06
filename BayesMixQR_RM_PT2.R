@@ -89,11 +89,11 @@ BMQR<-function(p, s, r, k ,d)
     mh1 <- min(mh1, 1.)
     q1 <- runif(1., 0., 1.)
     if(mh1 > q1) {
-      th <- thnew
+      th <- thnew[j]
       den <- num1
     }
     else {
-      th <- thold
+      th <- thold[j]
       den <- denom1
     }
     list(th = th, den = den)
